@@ -107,6 +107,11 @@ Selain teknologi di atas, **PulseCare** juga menggunakan beberapa library tambah
 
 Diagram berikut dibuat sebagai gambaran sebelum program dikembangkan.
 ### 6.1 Use Case
+<details>
+<summary>Use Case </summary>
+ <img width="1023" height="1353" alt="usecase drawio" src="https://github.com/user-attachments/assets/66031506-4b23-498e-ae3c-616d231c4eda" />
+Sistem PulseCare memiliki tiga pengguna, yaitu Admin, Petugas, dan Dokter yang wajib melakukan login sebelum menggunakan sistem. Admin bertugas mengelola akun dan menetapkan role pengguna, Petugas mengelola data pasien serta pendaftaran kunjungan, sedangkan Dokter melakukan pemeriksaan dan mencatat hasil pemeriksaan serta diagnosis. Selain itu, Dokter dapat membuat resep obat dan catatan tindak lanjut jika diperlukan. Petugas dan Dokter juga dapat melihat riwayat serta memperbarui status kunjungan pasien agar proses pelayanan dapat dipantau dengan baik.
+</details>
 
 ### 6.2 Flowchart
 <details>
