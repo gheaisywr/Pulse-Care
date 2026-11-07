@@ -39,17 +39,23 @@ Fitur dibagi berdasarkan peran pengguna agar setiap orang fokus pada tugasnya.
 <table>
   <tr>
     <td align="center" width="33%">
-      ><br>
-      <sub>
-<b>Dashboard Admin</b></sub>
+<img width="1204" height="813" alt="WhatsApp Image 2026-11-08 at 00 14 11" src="https://github.com/user-attachments/assets/442c2d75-4fae-4bd1-a6f1-2bbd379496ce" />
+
+
+<br>
+      <sub><b>Dashboard Admin</b></sub>
     </td>
-    <td align="center" width="33%">
-      <img width="605" height="422" alt="image" src="https://github.com/user-attachments/assets/12c66bb7-1c4f-45bf-88ea-ec774ddbf53d" />
+    <td align="center" width="33%"><img width="1203" height="820" alt="WhatsApp Image 2026-11-08 at 00 16 49" src="https://github.com/user-attachments/assets/bc72f2a3-407f-44a8-a6ac-ad91beb68de1" />
+
+
 <br>
       <sub><b>Mencatat Daftar Kunjungan</b></sub>
     </td>
     <td align="center" width="33%">
-      <img src="docs/form-pemeriksaan.png" alt="Form Pemeriksaan"><br>
+<img width="1011" height="686" alt="WhatsApp Image 2026-11-07 at 23 55 21 (1)" src="https://github.com/user-attachments/assets/1f460bef-7a24-42eb-a2a2-a196b8a3d465" />
+
+
+<br>
       <sub><b>Pemeriksaan Pasien</b></sub>
     </td>
   </tr>
@@ -489,7 +495,8 @@ public abstract class Pegawai {
 
 ### 9.3 Cara Penggunaan Fitur program
 ### 1. Menu Utama
-<img width="599" height="391" alt="image" src="https://github.com/user-attachments/assets/9539061d-dce3-4d3c-8224-99c1dd429a5a" />
+<img width="600" height="413" alt="Screenshot 2026-11-08 002920" src="https://github.com/user-attachments/assets/483ecb80-2b2d-4ef3-bb38-88e5e725d231" />
+
 
 1. Jalankan program PulseCare.
    
@@ -500,7 +507,8 @@ public abstract class Pegawai {
 4. Jika tidak ingin menggunakan program, klik tombol Keluar untuk menutup program.
 
 ### 2. Login
-<img width="602" height="413" alt="Screenshot 2026-11-07 043741" src="https://github.com/user-attachments/assets/16877c52-0808-4cd4-b6a7-5103d1e7d8c5" />
+<img width="599" height="410" alt="Screenshot 2026-11-08 002942" src="https://github.com/user-attachments/assets/dd4fb52c-51e8-4f05-a920-5899c84570da" />
+
 
 1. Setelah menekan tombol Masuk, halaman Login akan ditampilkan
 
@@ -518,7 +526,8 @@ public abstract class Pegawai {
 7. jika data salah, sistem menampilkan pemberitahuan bahwa Username atau Password tidak sesuai
 
 ### 3. Dashboard Admin
-<img width="605" height="422" alt="image" src="https://github.com/user-attachments/assets/12c66bb7-1c4f-45bf-88ea-ec774ddbf53d" />
+<img width="1204" height="813" alt="WhatsApp Image 2026-11-08 at 00 14 11" src="https://github.com/user-attachments/assets/236d1c3f-1b2b-4daf-986a-693fd094e18d" />
+
 
 1. Login menggunakan akun dengan role Admin
 
@@ -546,7 +555,8 @@ public abstract class Pegawai {
 7. Sistem menyimpan data akun ke database.
 
 ### 5. Form Pasien
-<img width="299" height="400" alt="image" src="https://github.com/user-attachments/assets/521c9759-446d-400c-9cc0-6b503517252c" />
+<img width="302" height="401" alt="image" src="https://github.com/user-attachments/assets/82703fa9-bd8c-430b-8e60-4d759b5305f7" />
+
 
 1. Buka menu Kelola Pasien.
 
@@ -563,7 +573,8 @@ public abstract class Pegawai {
 7. Sistem menyimpan perubahan ke database.
    
 ### 6. Dashboard Petugas 
-<img width="1206" height="820" alt="WhatsApp Image 2026-11-07 at 22 44 30" src="https://github.com/user-attachments/assets/86768b0e-1f00-42a2-b9fb-2986a2e65932" />
+<img width="1204" height="826" alt="WhatsApp Image 2026-11-07 at 22 38 27" src="https://github.com/user-attachments/assets/f4e6bdb6-ac08-4c74-b802-1ead809bb577" />
+
 
 
 
@@ -574,7 +585,9 @@ public abstract class Pegawai {
 3. Pilih menu Kelola Data Pasien atau Daftarkan Kunjungan sesuai kebutuhan.
 
 ### 7.Mendaftaran Kunjungan
-<img width="1207" height="816" alt="WhatsApp Image 2026-11-07 at 22 45 03" src="https://github.com/user-attachments/assets/032613a5-88d5-4399-ab65-ba923cf7999d" />
+<img width="1207" height="816" alt="WhatsApp Image 2026-11-07 at 22 45 03 (1)" src="https://github.com/user-attachments/assets/6e4f81ea-f1bf-4ec2-94ee-80f7fa574873" />
+
+
 
 
 1. Buka menu Daftarkan Kunjungan.
@@ -597,7 +610,8 @@ public abstract class Pegawai {
 
 
 ### 8. Dashboard Dokter
-<img width="604" height="412" alt="image" src="https://github.com/user-attachments/assets/e71100d5-51b6-46b7-b914-6ed6ddf68102" />
+<img width="1209" height="819" alt="WhatsApp Image 2026-11-07 at 23 56 08 (1)" src="https://github.com/user-attachments/assets/c36f91b3-d434-444f-8fca-92ae0a7c3c12" />
+
 
 1. Login menggunakan akun dengan role Dokter.
 
@@ -606,7 +620,8 @@ public abstract class Pegawai {
 3. Pilih menu Antrean Dokter untuk melihat pasien yang menunggu pemeriksaan.
 
 ### 9. Antrean Dokter
-<img width="605" height="415" alt="image" src="https://github.com/user-attachments/assets/1073bd5c-faee-44ef-bd62-b371cd249945" />
+<img width="1201" height="828" alt="WhatsApp Image 2026-11-07 at 23 56 19" src="https://github.com/user-attachments/assets/2d1f1c87-ebad-4eaa-84a7-284e58944c01" />
+
 
 1. Buka menu Antrean Dokter.
 
@@ -621,7 +636,8 @@ public abstract class Pegawai {
 6. Jika tidak ada konflik, sistem membuka data kunjungan untuk proses pemeriksaan.
 
 ### 10. Pemeriksaan Ke Pasien
-<img width="601" height="410" alt="image" src="https://github.com/user-attachments/assets/f7bfb6ad-a81d-4d28-bc33-db8e806ac0a0" />
+<img width="1011" height="686" alt="WhatsApp Image 2026-11-07 at 23 55 21 (1)" src="https://github.com/user-attachments/assets/25b664e1-9a2a-46f2-aab7-f471d45bedf0" />
+
 
 1. Buka formulir pemeriksaan pasien yang dipilih.
 
@@ -644,7 +660,9 @@ public abstract class Pegawai {
 10. Sistem menyimpan hasil pemeriksaan dan memperbarui status kunjungan menjadi Selesai.
 
 ### 11. Riwayat Kunjungan
-<img width="1210" height="826" alt="WhatsApp Image 2026-11-07 at 22 45 25" src="https://github.com/user-attachments/assets/4bae6f27-a35a-40b9-a7ca-7fbb4bdef8fd" />
+<img width="1201" height="817" alt="WhatsApp Image 2026-11-08 at 00 17 05 (1)" src="https://github.com/user-attachments/assets/c7db5980-4311-41da-88e8-da208045a78e" />
+
+
 
 
 1. Buka menu Riwayat Kunjungan.
@@ -656,57 +674,9 @@ public abstract class Pegawai {
 4. Sistem menampilkan riwayat kunjungan pasien jika data ditemukan.
 
 5. Periksa tanggal kunjungan, poliklinik, dokter, nomor antrean, dan status kunjungan.
+  
+6. Pilih data untuk di edit atau di hapus.
 
-### 12. Perbarui Status
-<img width="600" height="409" alt="image" src="https://github.com/user-attachments/assets/878f746b-b7cf-4d2a-9c8b-77288847f9ce" />
-
-1. Buka menu Perbarui Status.
-
-2. Sistem menampilkan daftar kunjungan pasien.
-
-3. Pilih kunjungan yang ingin diperbarui.
-
-4. Tentukan status kunjungan sesuai proses pelayanan.
-
-5. Simpan perubahan status.
-
-6. Sistem akan menampilkan pemberitahuan apabila perubahan berhasil.
-
-
----
-
-## 9.3 Tampilan program
-
-<details open>
-<summary>Login dan Dashboard</summary>
-
-| Halaman Login | Dashboard |
-|:---:|:---:|
-| ![Halaman Login](docs/login.png) | ![Dashboard PulseCare](docs/dashboard.png) |
-
-</details>
-
-<details>
-<summary><b>Petugas</b>: kelola pasien, pendaftaran kunjungan, riwayat</summary>
-
-| Kelola Data Pasien | Pendaftaran Kunjungan |
-|:---:|:---:|
-| ![Halaman Kelola Pasien](docs/kelola-pasien.png) | ![Halaman Daftarkan Kunjungan](docs/daftarkan-kunjungan.png) |
-
-**Riwayat Kunjungan**
-
-![Halaman Riwayat Kunjungan](docs/riwayat-kunjungan.png)
-
-</details>
-
-<details>
-<summary><b>Dokter</b>: antrean dan form pemeriksaan</summary>
-
-| Antrean Dokter | Form Pemeriksaan |
-|:---:|:---:|
-| ![Halaman Antrean Dokter](docs/antrean-dokter.png) | ![Form Pemeriksaan](docs/form-pemeriksaan.png) |
-
-</details>
 
 ---
 
