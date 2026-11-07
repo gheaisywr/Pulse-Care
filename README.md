@@ -353,10 +353,23 @@ PulseCare dibuat dengan konsep Object-Oriented Programming atau OOP. Empat konse
 | **Abstraction** | Menampilkan bagian penting dan menyembunyikan detail proses, melalui `abstract class` atau `interface`. |
 
 ### 8.1 Encapsulation (Enkapsulasi)
+Pada PulseCare, encapsulation diterapkan pada class Pasien. Atribut seperti idPasien, nik, namaLengkap, dan tanggalLahir menggunakan access modifier private, sehingga tidak dapat diakses secara langsung dari luar class. Akses dan perubahan data dilakukan melalui method getter dan setter.
 
 **Contoh implementasi:**
 ```java
-kode
+public class Pasien {
+    private String idPasien;
+    private String nik;
+    private String namaLengkap;
+
+    public String getNamaLengkap() {
+        return namaLengkap;
+    }
+
+    public void setNamaLengkap(String namaLengkap) {
+        this.namaLengkap = namaLengkap;
+    }
+}
 ```
 
 ### 8.2 Inheritance (Pewarisan)
@@ -401,10 +414,27 @@ public class Admin extends Pegawai {
 }
 ```
 ### 8.3 Polymorphism (Polimorfisme)
+Pada PulseCare, polymorphism diterapkan melalui method getPeran() pada class Pegawai yang diimplementasikan kembali (override) oleh class Admin, Dokter, dan Petugas. Method tersebut memiliki nama yang sama, tetapi menghasilkan nilai berbeda sesuai jenis pegawainya.
 
 **Contoh implementasi:**
 ```java
-kode
+// Class Admin
+@Override
+public String getPeran() {
+    return "Admin";
+}
+
+// Class Dokter
+@Override
+public String getPeran() {
+    return "Dokter";
+}
+
+// Class Petugas
+@Override
+public String getPeran() {
+    return "Petugas";
+}
 ```
 ### 8.4 Abstraction (Abstraksi)
 Pada PulseCare, abstraction diterapkan melalui class Pegawai yang dideklarasikan menggunakan keyword abstract. Class ini menjadi dasar bagi class turunannya, seperti Admin, Dokter, dan Petugas, dengan menyediakan atribut dan method umum yang dimiliki setiap pegawai.
@@ -494,6 +524,7 @@ public abstract class Pegawai {
 6. Login menggunakan akun yang sudah terdaftar.
 
 ### 9.3 Cara Penggunaan Fitur program
+
 ### 1. Menu Utama
 <img width="600" height="413" alt="Screenshot 2026-11-08 002920" src="https://github.com/user-attachments/assets/483ecb80-2b2d-4ef3-bb38-88e5e725d231" />
 
@@ -505,6 +536,7 @@ public abstract class Pegawai {
 3. Klik tombol Masuk untuk melanjutkan ke halaman Login.
 
 4. Jika tidak ingin menggunakan program, klik tombol Keluar untuk menutup program.
+
 
 ### 2. Login
 <img width="599" height="410" alt="Screenshot 2026-11-08 002942" src="https://github.com/user-attachments/assets/dd4fb52c-51e8-4f05-a920-5899c84570da" />
@@ -525,6 +557,7 @@ public abstract class Pegawai {
 
 7. jika data salah, sistem menampilkan pemberitahuan bahwa Username atau Password tidak sesuai
 
+
 ### 3. Dashboard Admin
 <img width="1204" height="813" alt="WhatsApp Image 2026-11-08 at 00 14 11" src="https://github.com/user-attachments/assets/236d1c3f-1b2b-4daf-986a-693fd094e18d" />
 
@@ -537,8 +570,10 @@ public abstract class Pegawai {
 
 4. Pilih menu Kelola Data Pasien untuk mengelola informasi pasien
 
-### 4. Kelola Akun
-<img width="604" height="416" alt="image" src="https://github.com/user-attachments/assets/4690c391-4853-4552-85fd-60805dda2f95" />
+
+### 4. Kelola Akun Pegawai
+<img width="1203" height="819" alt="image" src="https://github.com/user-attachments/assets/30c157c1-b675-49a4-ba77-efcd5b3a967a" />
+
 
 1. Buka menu Kelola Akun.
 
@@ -554,7 +589,71 @@ public abstract class Pegawai {
 
 7. Sistem menyimpan data akun ke database.
 
-### 5. Form Pasien
+### 5. Dashboard Petugas 
+<img width="1204" height="826" alt="WhatsApp Image 2026-11-07 at 22 38 27" src="https://github.com/user-attachments/assets/f4e6bdb6-ac08-4c74-b802-1ead809bb577" />
+
+
+1. Login menggunakan akun dengan role Petugas.
+
+2. Sistem menampilkan Dashboard Petugas.
+
+3. Pilih menu Kelola Data Pasien atau Daftarkan Kunjungan sesuai kebutuhan.
+
+### 6. Form Kelola Akun
+
+#### 6.1 Tambah Data Pasien
+<img width="649" height="961" alt="image" src="https://github.com/user-attachments/assets/1706696a-5add-4396-8122-c0c59ad92f20" />
+
+1. Admin membuka menu Kelola Akun pada dashboard.
+
+2. Admin memilih tombol Tambah Akun untuk membuka formulir penambahan akun.
+
+3. Admin mengisi data akun sesuai kolom yang tersedia pada formulir.
+
+4. Setelah seluruh data terisi, Admin menekan tombol Simpan.
+
+5. Sistem memproses dan menyimpan data akun ke database.
+
+6. Jika penyimpanan berhasil, data akun baru akan ditampilkan pada halaman Kelola Akun.
+
+
+#### 6.2 Ubah Data Pasien
+<img width="646" height="961" alt="image" src="https://github.com/user-attachments/assets/d3c12326-8f52-4f3a-ba60-53a32653263d" />
+
+1. Admin membuka menu Kelola Akun pada dashboard.
+
+2. Admin memilih akun yang ingin diperbarui dari daftar akun.
+
+3. Admin menekan tombol Ubah untuk membuka formulir perubahan data.
+
+4. Admin memperbarui informasi akun sesuai kebutuhan.
+
+5. Setelah perubahan selesai, Admin menekan tombol Simpan.
+
+6. Sistem memproses perubahan dan memperbarui data akun di database.
+
+7. Data akun yang telah diperbarui akan ditampilkan pada halaman Kelola Akun.
+
+
+### 7. Kelola Pasien
+<img width="1207" height="825" alt="image" src="https://github.com/user-attachments/assets/f740fd76-df5d-4d39-8da0-b80db8c4b6bb" />
+
+1. Admin atau Petugas membuka menu Kelola Pasien melalui dashboard.
+
+2. Sistem menampilkan halaman Kelola Pasien yang berisi daftar data pasien.
+
+3. Pengguna dapat mencari data pasien melalui kolom pencarian berdasarkan informasi pasien.
+
+4. Untuk menambahkan pasien baru, pengguna memilih tombol Tambah Pasien.
+
+5. Untuk memperbarui data, pengguna memilih data pasien yang ingin diubah, kemudian menekan tombol Ubah.
+
+6. Sistem menampilkan formulir sesuai tindakan yang dipilih.
+
+7. Setelah data disimpan, sistem memperbarui daftar pasien dan menampilkan data terbaru.
+
+   
+### 8. Form Pasien
 <img width="302" height="401" alt="image" src="https://github.com/user-attachments/assets/82703fa9-bd8c-430b-8e60-4d759b5305f7" />
 
 
@@ -571,23 +670,10 @@ public abstract class Pegawai {
 6. Simpan data pasien.
 
 7. Sistem menyimpan perubahan ke database.
+
    
-### 6. Dashboard Petugas 
-<img width="1204" height="826" alt="WhatsApp Image 2026-11-07 at 22 38 27" src="https://github.com/user-attachments/assets/f4e6bdb6-ac08-4c74-b802-1ead809bb577" />
-
-
-
-
-1. Login menggunakan akun dengan role Petugas.
-
-2. Sistem menampilkan Dashboard Petugas.
-
-3. Pilih menu Kelola Data Pasien atau Daftarkan Kunjungan sesuai kebutuhan.
-
 ### 7.Mendaftaran Kunjungan
 <img width="1207" height="816" alt="WhatsApp Image 2026-11-07 at 22 45 03 (1)" src="https://github.com/user-attachments/assets/6e4f81ea-f1bf-4ec2-94ee-80f7fa574873" />
-
-
 
 
 1. Buka menu Daftarkan Kunjungan.
@@ -663,8 +749,6 @@ public abstract class Pegawai {
 <img width="1201" height="817" alt="WhatsApp Image 2026-11-08 at 00 17 05 (1)" src="https://github.com/user-attachments/assets/c7db5980-4311-41da-88e8-da208045a78e" />
 
 
-
-
 1. Buka menu Riwayat Kunjungan.
 
 2. Masukkan informasi pencarian sesuai kolom yang tersedia.
@@ -676,6 +760,10 @@ public abstract class Pegawai {
 5. Periksa tanggal kunjungan, poliklinik, dokter, nomor antrean, dan status kunjungan.
   
 6. Pilih data untuk di edit atau di hapus.
+
+### 12. Detail Kunjungan
+<img width="293" height="386" alt="image" src="https://github.com/user-attachments/assets/93c1e802-b72e-4064-be34-0a93f66155bc" />
+
 
 
 ---
